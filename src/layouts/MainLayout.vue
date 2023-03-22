@@ -34,7 +34,7 @@
       v-model="rightDrawerOpen"
       overlay
       side="right"
-      :width="$q.screen.width"
+      width="300"
       class="bg-secondary column justify-between"
       behavior="desktop"
     >
@@ -112,4 +112,3 @@ export default {
   }
 }
 </style>
-
