@@ -7,7 +7,22 @@
       <q-toolbar class="q-py-md">
         <q-space />
         <q-toolbar-title class="col-auto" :style="{ marginLeft: margin }">
-          <router-link to="/" class="second-font"> GEOMETRIA </router-link>
+          <router-link to="/" class="second-font">
+            <img
+              v-if="rightDrawerOpen"
+              src="~assets/logo-white.svg"
+              alt=""
+              width="100"
+              style="display: block"
+            />
+            <img
+              v-else
+              src="~assets/logo-black.svg"
+              alt=""
+              width="100"
+              style="display: block"
+            />
+          </router-link>
         </q-toolbar-title>
         <q-space />
         <q-btn
