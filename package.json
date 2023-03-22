@@ -1,8 +1,8 @@
 {
   "name": "piramida23",
   "version": "0.0.1",
-  "description": "piramida 23 first app",
-  "productName": "Piramida23",
+  "description": "geometria test app",
+  "productName": "Geometria",
   "author": "Anastasiya Pozemina ",
   "private": true,
   "scripts": {

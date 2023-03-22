@@ -36,6 +36,7 @@
       side="right"
       :width="$q.screen.width"
       class="bg-secondary column justify-between"
+      behavior="desktop"
     >
       <q-list class="text-white text-h5">
         <q-item class="q-py-md q-px-xl" clickable :to="{ name: 'Contacts' }">
