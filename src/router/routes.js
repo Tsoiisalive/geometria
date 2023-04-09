@@ -1,9 +1,9 @@
-import DashboardPage from "pages/DashboardPage.vue";
-import ContactsPage from "pages/ContactsPage.vue";
-import PortfolioPage from "pages/PortfolioPage.vue";
-import PricesPage from "pages/PricesPage.vue";
-import ServicesPage from "pages/ServicesPage.vue";
-import ServicePage from "pages/ServicePage.vue";
+import DashboardPage from "@/pages/DashboardPage.vue";
+import ContactsPage from "@/pages/ContactsPage.vue";
+import PortfolioPage from "@/pages/PortfolioPage.vue";
+import PricesPage from "@/pages/PricesPage.vue";
+import ServicesPage from "@/pages/ServicesPage.vue";
+import ServicePage from "@/pages/ServicePage.vue";
 
 const routes = [
   {
@@ -39,7 +39,7 @@ const routes = [
 
   {
     path: "/:catchAll(.*)*",
-    component: () => import("pages/ErrorNotFound.vue"),
+    component: () => import("@/pages/ErrorNotFound.vue"),
   },
 ];
 

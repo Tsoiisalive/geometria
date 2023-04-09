@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import ImagesList from "src/components/ImagesList.vue";
+import ImagesList from "@/components/ImagesList.vue";
 export default {
   data() {
     return {

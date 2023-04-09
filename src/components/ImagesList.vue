@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import ImageViewer from "src/components/ImageViewer.vue";
+import ImageViewer from "@/components/ImageViewer.vue";
 export default {
   components: { ImageViewer },
   props: {

@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import PricesTable from "src/components/PricesTable.vue";
+import PricesTable from "@/components/PricesTable.vue";
 export default {
   data() {
     return {

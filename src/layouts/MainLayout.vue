@@ -10,14 +10,14 @@
           <router-link to="/" class="second-font">
             <img
               v-if="rightDrawerOpen"
-              src="~assets/logo-white.svg"
+              src="@/assets/logo-white.svg"
               alt=""
               width="100"
               style="display: block"
             />
             <img
               v-else
-              src="~assets/logo-black.svg"
+              src="@/assets/logo-black.svg"
               alt=""
               width="100"
               style="display: block"
@@ -49,7 +49,7 @@
       v-model="rightDrawerOpen"
       overlay
       side="right"
-      width="300"
+      :width="300"
       class="bg-secondary column justify-between"
       behavior="desktop"
     >
@@ -99,7 +99,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../css/quasar.variables.scss";
+@import "@/styles/quasar.variables.scss";
 @keyframes color {
   from {
     background: $primary;

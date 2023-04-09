@@ -42,9 +42,9 @@
 </template>
 
 <script>
-import { services } from "src/data/services";
-import ImagesList from "src/components/ImagesList.vue";
-import PricesTable from "src/components/PricesTable.vue";
+import { services } from "@/data/services";
+import ImagesList from "@/components/ImagesList.vue";
+import PricesTable from "@/components/PricesTable.vue";
 export default {
   data() {
     return {
