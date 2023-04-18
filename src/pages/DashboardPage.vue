@@ -10,7 +10,11 @@
         params: { id: service.id },
       }"
     >
-      <q-img class="img" :src="service.src" :alt="service.name">
+      <q-img
+        class="img"
+        :src="require(`@/assets/pages/${service.tag}/${service.tag}.jpg`)"
+        :alt="service.name"
+      >
         <div
           class="absolute-full text-h6 flex flex-center text-uppercase"
           style="background: transparent"

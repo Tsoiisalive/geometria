@@ -23,6 +23,10 @@ import ImageViewer from "@/components/ImageViewer.vue";
 export default {
   components: { ImageViewer },
   props: {
+    count: {
+      type: Number,
+      required: true,
+    },
     images: {
       type: Array,
       required: true,
@@ -31,5 +35,4 @@ export default {
 };
 </script>
 
-<style>
-</style>
+<style></style>
