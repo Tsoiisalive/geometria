@@ -3,14 +3,34 @@
     <div class="col">
       <div class="row q-col-gutter-lg">
         <div
-          v-for="image of images"
-          :key="image.src"
-          :class="image.class"
+          v-for="n of count"
+          :key="images[n - 1].name"
+          :class="[
+            n % 2 === 0
+              ? 'col-12 col-sm-4 col-md-3'
+              : n % 3 === 0
+              ? 'col-12 col-sm-4 col-md-3'
+              : 'col-12 col-sm-8 col-md-6',
+          ]"
           class="cursor-pointer"
-          @click="$refs.viewer.open(images, image.name)"
+          @click="$refs.viewer.open(images.slice(0, count), images[n - 1].name)"
         >
-          <q-img class="img" :alt="image.name" :src="image.src" />
+          <q-img
+            class="img"
+            :alt="images[n - 1].name"
+            :src="images[n - 1].src"
+          />
         </div>
+      </div>
+      <div class="text-center q-mt-md" v-if="count < totalCount">
+        <q-btn
+          label="Загрузить еще"
+          color="grey"
+          no-caps
+          flat
+          class="second-font"
+          @click="onCountUp"
+        />
       </div>
     </div>
 
@@ -23,13 +43,24 @@ import ImageViewer from "@/components/ImageViewer.vue";
 export default {
   components: { ImageViewer },
   props: {
-    count: {
+    totalCount: {
       type: Number,
       required: true,
     },
     images: {
       type: Array,
       required: true,
+    },
+  },
+  data() {
+    return {
+      count: 15,
+    };
+  },
+  methods: {
+    onCountUp() {
+      const diff = this.totalCount - this.count;
+      this.count = diff >= 15 ? this.count + 15 : this.count + diff;
     },
   },
 };

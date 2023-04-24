@@ -25,7 +25,7 @@
             ФОТО
           </h2>
 
-          <images-list :tag="service.tag" :count="count" />
+          <images-list :images="images" :total-count="service.imagesCount" />
         </div>
       </div>
     </div>
@@ -42,11 +42,24 @@ export default {
     return {
       service: null,
       imagesCount: 3,
+      images: [],
     };
   },
   created() {
     const id = this.$route.params.id;
     this.service = services.find((service) => service.id === +id);
+
+    this.getImages();
+  },
+  methods: {
+    getImages() {
+      for (let i = 1; i <= this.service.imagesCount; i++) {
+        this.images.push({
+          src: require(`@/assets/pages/${this.service.tag}/${this.service.tag + i}.jpg`),
+          name: `${this.service.tag} портфолио ${i}`,
+        });
+      }
+    },
   },
 };
 </script>
