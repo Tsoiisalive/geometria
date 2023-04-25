@@ -51,7 +51,7 @@
       v-model="rightDrawerOpen"
       overlay
       side="right"
-      :width="300"
+      :width="$q.screen.width * 0.3"
       class="bg-secondary column justify-between"
       behavior="desktop"
     >
