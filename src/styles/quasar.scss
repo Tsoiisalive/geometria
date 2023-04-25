@@ -8,7 +8,6 @@
 body {
   font-family: "Source Serif 4", serif;
 }
-
 .second-font {
   font-family: "Montserrat", sans-serif;
 }
@@ -18,4 +17,13 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 16px;
+}
+
+.link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.light-hover:hover  {
+  opacity: 0.8;
 }

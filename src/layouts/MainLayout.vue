@@ -72,8 +72,26 @@
       <div
         class="row q-gutter-lg justify-center text-accent q-pa-xl second-font"
       >
-        <div>8900800100100</div>
-        <div>piramida23@piramida.com</div>
+        <div class="col-12 text-center">
+          <a href="tel:+79283332390" class="link">+7(928)333-23-90</a>
+        </div>
+
+        <div class="col-12 text-center">
+          <a href="mailto:9283333390@mail.ru" class="link">
+            9283333390@mail.ru
+          </a>
+        </div>
+
+        <div class="row items-start col-12 justify-center
+        ">
+          <a href="https://t.me/+79283332390" class="light-hover">
+            <img src="@/assets/telegram.svg" width="16" />
+          </a>
+
+          <a href="https://wa.me/79283332390" class="q-ml-lg light-hover">
+            <img src="@/assets/whatsapp.svg" width="16" />
+          </a>
+        </div>
       </div>
     </q-drawer>
 
