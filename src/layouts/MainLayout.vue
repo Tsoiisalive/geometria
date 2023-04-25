@@ -65,9 +65,6 @@
         <q-item class="q-py-md q-px-xl" clickable :to="{ name: 'Services' }">
           УСЛУГИ
         </q-item>
-        <q-item class="q-py-md q-px-xl" clickable :to="{ name: 'Prices' }">
-          ПРАЙС
-        </q-item>
       </q-list>
       <div
         class="row q-gutter-lg justify-center text-accent q-pa-xl second-font"
