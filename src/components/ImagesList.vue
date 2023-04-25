@@ -5,13 +5,7 @@
         <div
           v-for="n of count"
           :key="images[n - 1].name"
-          :class="[
-            n % 2 === 0
-              ? 'col-12 col-sm-4 col-md-3'
-              : n % 3 === 0
-              ? 'col-12 col-sm-4 col-md-3'
-              : 'col-12 col-sm-8 col-md-6',
-          ]"
+          :class="classes[(n % 12 || 12) - 1]"
           class="cursor-pointer"
           @click="$refs.viewer.open(images.slice(0, count), images[n - 1].name)"
         >
@@ -54,7 +48,21 @@ export default {
   },
   data() {
     return {
-      count: 15,
+      count: 12,
+      classes: [
+        "col-12 col-sm-8 col-md-6",
+        "col-12 col-sm-4 col-md-3",
+        "col-12 col-sm-4 col-md-3",
+        "col-12 col-sm-4 col-md-3",
+        "col-12 col-sm-4 col-md-3",
+        "col-12 col-sm-8 col-md-6",
+        "col-12 col-sm-4 col-md-4",
+        "col-12 col-sm-4 col-md-4",
+        "col-12 col-sm-4 col-md-4",
+        "col-12 col-md-6",
+        "col-12 col-sm-6 col-md-3",
+        "col-12 col-sm-6 col-md-3",
+      ],
     };
   },
   methods: {

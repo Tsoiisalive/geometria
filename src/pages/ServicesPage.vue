@@ -24,7 +24,7 @@
                 v-ripple
               >
                 <q-card-section class="q-pa-none">
-                  <q-img class="img" :alt="service.name" :src="service.src" />
+                  <q-img class="img" :alt="service.name" :src="require(`@/assets/pages/${service.tag}/${service.tag}.jpg`)" />
                 </q-card-section>
                 <q-card-section>
                   <div class="text-h6">{{ service.name }}</div>
