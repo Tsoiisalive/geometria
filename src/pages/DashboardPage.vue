@@ -16,7 +16,7 @@
         :alt="service.name"
       >
         <div
-          class="absolute-full text-h6 flex flex-center text-uppercase"
+          class="absolute-full text-h6 flex flex-start text-uppercase shadow"
           style="background: transparent"
         >
           {{ service.name }}
@@ -60,5 +60,8 @@ export default {
   body.screen--xs & {
     height: auto !important;
   }
+}
+.shadow {
+  text-shadow: 0px 5px 15px rgb(91, 88, 88);
 }
 </style>
