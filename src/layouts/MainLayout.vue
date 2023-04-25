@@ -13,6 +13,7 @@
               src="@/assets/logo-white.svg"
               alt=""
               width="100"
+              height="61.48"
               style="display: block"
             />
             <img
@@ -20,6 +21,7 @@
               src="@/assets/logo-black.svg"
               alt=""
               width="100"
+              height="61.48"
               style="display: block"
             />
           </router-link>

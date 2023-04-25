@@ -55,7 +55,7 @@ export default {
   }
 }
 .img {
-  height: calc((100vh - 66px) / 2) !important;
+  height: calc((100vh - 93px) / 2) !important;
 
   body.screen--xs & {
     height: auto !important;
