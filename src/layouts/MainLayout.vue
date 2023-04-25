@@ -51,7 +51,7 @@
       v-model="rightDrawerOpen"
       overlay
       side="right"
-      :width="$q.screen.width * 0.3"
+      :width="$q.screen.gt.sm ? $q.screen.width * 0.3 : $q.screen.width"
       class="bg-secondary column justify-between"
       behavior="desktop"
     >
